@@ -1,3 +1,6 @@
 public class Notebook {
-        int weight = 600;
+    int weight;
+    public Notebook(int weight) {
+        this.weight = weight;
     }
+}
