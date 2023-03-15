@@ -25,4 +25,14 @@ public class Notebook {
             System.out.println("This noteboook is expensiv!");
         }
     }
+
+    public  void checkWeight(){
+        if (this.weight <= 600) {
+            System.out.println("This device is lightweight");
+        } else if (this.weight > 600 && this.weight <= 1600 ){
+            System.out.println("this device is not very heavy");
+        } else {
+            System.out.println("This device is heavy");
+        }
+    }
 }
