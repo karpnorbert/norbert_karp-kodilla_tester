@@ -1,8 +1,17 @@
 public class User {
-    public static void main(String[] args) {
+        private String name;
+        private  int age;
 
-        String[] name = new String[] {"David", "John", "Kate", "Rob", "Carolyne"};
-        int [] age = new int[] {13, 22, 31, 14, 10};
-        System.out.println(name[3] + " " + age[2]);
+    public User(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 }
