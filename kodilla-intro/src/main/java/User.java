@@ -16,7 +16,7 @@ public class User {
     }
 
     @Override
-    public String toString() {
+    public String ja toString() {
         return "User{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
