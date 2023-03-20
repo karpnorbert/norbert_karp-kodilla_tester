@@ -1,3 +1,5 @@
+package Grades;
+
 public class Grades {
     private int[] grades;
     private int size;

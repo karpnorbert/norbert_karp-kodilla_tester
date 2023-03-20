@@ -1,3 +1,5 @@
+package Main;
+
 public class MainExtended {
     public static void main(String[] args) {
     int temperature = 12;

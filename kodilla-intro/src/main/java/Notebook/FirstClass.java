@@ -1,9 +1,11 @@
+package Notebook;
+
 public class FirstClass {
     public static void main(String[] args) {
         System.out.println(" ");
 
         Notebook notebook = new Notebook(600, 1000, 2021);
-        System.out.println("Notebook weight: " + notebook.weight + " " + "Notebook price: " + notebook.price + " " + "Notebook year: " + notebook.year);
+        System.out.println("Notebook.Notebook weight: " + notebook.weight + " " + "Notebook.Notebook price: " + notebook.price + " " + "Notebook.Notebook year: " + notebook.year);
         notebook.checkPrice();
         notebook.checkWeight();
         notebook.checkYearAndPrice();

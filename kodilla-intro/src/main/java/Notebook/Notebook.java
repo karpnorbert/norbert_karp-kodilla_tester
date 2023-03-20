@@ -1,3 +1,5 @@
+package Notebook;
+
 public class Notebook {
     int weight;
     int price;
