@@ -1,4 +1,4 @@
-package Calculator;
+package UserDialogs;
 
 import java.util.Scanner;
 public class UserDialogs {
