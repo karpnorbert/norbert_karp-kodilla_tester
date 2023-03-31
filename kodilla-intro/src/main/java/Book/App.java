@@ -1,8 +1,17 @@
 package Book;
 
-public class App {
-    public static void main(String[] args) {
+import static Book.Book.*;
 
-        Book book = Book.of("Isaac Asimov", "The Galaxy");
+public class App {
+    public static void main (String[] args) {
+
+        Book book  = new Book.of(" "," ");
+
+
+
+
+
+
+
     }
 }

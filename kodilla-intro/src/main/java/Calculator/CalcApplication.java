@@ -14,4 +14,5 @@ public class CalcApplication {
         Calculator calculator2 = new Calculator();         // [3]
         System.out.println(calculator2.counter);
     }
+
 }
