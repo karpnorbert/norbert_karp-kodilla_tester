@@ -1,18 +1,14 @@
 package Book;
 
-public class Book {
+class Book {
+    private  String author;
+    private  String title;
+    public Book (String author, String title) {
+        this.author = author;
+        this.title = title;
+    }
 
-    String author;
-    String title;
-
-
-
-    public static class of extends Book {
-        String author;
-        String title;
-
-        public of(String author , String title) {
-            super();
-        }
+    public static Book of(String author, String title) {
+        return new Book(author,title);
     }
 }
