@@ -7,8 +7,8 @@ public class color {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Select 1-st letter of color (B, R, W, BL, Y) :");
-            String calc = scanner.nextLine().trim().toUpperCase();
-            switch (calc) {
+            String find = scanner.nextLine().trim().toUpperCase();
+            switch (find) {
                 case "B": return "BROWN";
                 case "R": return "RED";
                 case "W": return "WHITE";
