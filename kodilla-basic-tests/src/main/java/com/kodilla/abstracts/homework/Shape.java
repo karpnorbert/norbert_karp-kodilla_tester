@@ -2,6 +2,9 @@ package com.kodilla.abstracts.homework;
 
 public abstract class Shape {
 
-    abstract double Circle();
-    abstract double Area();
+
+    public abstract double area();
+
+
+    public abstract double circuit();
 }
