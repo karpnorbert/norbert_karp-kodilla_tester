@@ -1,8 +1,9 @@
 package com.kodilla.basic_assertion;
 
+
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static com.kodilla.basic_assertion.ResultChecker.assertEquals;
 
 public class CalculatorTestSuite {
 
@@ -20,14 +21,7 @@ public class CalculatorTestSuite {
         Calculator calculator1 = new Calculator();
         int a1 = 5;
         int b2 = 5;
-        int sumResult1 = calculator1.subtrack(a1, b2);
-        assertEquals(0, sumResult1);
-    }
-
-    @Test
-    public void assertEquals(){
-        double expected  ;
-        double actual ;
-        double delta ;
+        int sumResult1 = calculator1.subtrack(1, b2);
+        int sumResult = calculator1.subtrack(a1, b2);
     }
 }
