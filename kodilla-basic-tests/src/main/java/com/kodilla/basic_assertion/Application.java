@@ -24,7 +24,5 @@ public class Application {
         } else {
             System.out.println("Metoda sum nie działa poprawnie dla liczb " + a1 + " i " + b2);
         }
-
-
     }
 }
