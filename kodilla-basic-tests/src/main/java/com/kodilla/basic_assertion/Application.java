@@ -28,6 +28,7 @@ public class Application {
         Calculator calculator2 = new Calculator();
         double a2 = 2;
         int b3 = 4;
+        double delta = 0.001;
         double sumResult2 = calculator2.pow(a2, b3);
         boolean correct2 = ResultChecker.assertEquals(16, sumResult2);
         if(correct2){
