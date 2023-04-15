@@ -1,5 +1,4 @@
 package com.kodilla.basic_assertion;
-import java.lang.Math;
 
 public class Calculator {
     public int sum(int a, int b){
@@ -9,8 +8,12 @@ public class Calculator {
         return a1 - b2;
     }
 
-    public double pow(double a2, double b3){
-        return pow(a2, b3);
+    public double pow(double a2, int b3){
+        double result = a2;
+        for (int k = 2; k <= b3; k++){
+            result *= a2;
+        }
+        return result;
    }
 }
 
