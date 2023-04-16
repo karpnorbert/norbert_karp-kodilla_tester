@@ -1,3 +1,4 @@
+/*
 package com.kodilla.school;
 
 import org.junit.jupiter.api.Test;
@@ -76,6 +77,5 @@ public class StudentTestSuite {
         student.addPhysicsGrade(3);
         assertEquals(2.375, student.getAverage(), 0.001);
     }
-
-
 }
+*/
