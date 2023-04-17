@@ -11,10 +11,10 @@ public class Application {
         cashMachine.payOut(45);
         cashMachine.payOut(665);
         cashMachine.payOut(3659);
-        System.out.println(cashMachine.getSaldo());
-        System.out.println(cashMachine.getAveragePayOut());
-        System.out.println(cashMachine.getAveragePayIn());
-        System.out.println(cashMachine.getNumberOfTransactionsIn());
-        System.out.println(cashMachine.getNumberOfTransactionsOut());
+        System.out.println("Your saldo is equal: " + cashMachine.getSaldo() + " " + "EUR");
+        System.out.println("Your Average PayOuts are equal: " +cashMachine.getAveragePayOut() + " " + "EUR");
+        System.out.println("Your Average PayIns are equal: " +cashMachine.getAveragePayIn() + " " + "EUR");
+        System.out.println("Your number of transactionIn is equal: " + cashMachine.getNumberOfTransactionsIn());
+        System.out.println("Your number of transactionOut is equal: " + cashMachine.getNumberOfTransactionsOut());
     }
 }
