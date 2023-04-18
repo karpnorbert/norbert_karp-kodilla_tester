@@ -8,5 +8,4 @@ public interface Shape {
         System.out.println(shape.getArea());
         System.out.println(shape.getPerimeter());
     }
-
 }
