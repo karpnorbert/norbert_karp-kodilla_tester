@@ -5,5 +5,9 @@ public class InterfacesDemo {
         Square square = new Square(10.0);
         System.out.println(square.getArea());
         System.out.println(square.getPerimeter());
+
+        Circle circle = new Circle(20);
+        System.out.println(circle.getArea());
+        System.out.println(circle.getPerimeter());
     }
 }
