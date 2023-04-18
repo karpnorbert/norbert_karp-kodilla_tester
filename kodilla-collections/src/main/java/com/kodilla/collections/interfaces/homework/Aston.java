@@ -11,8 +11,8 @@ public class Aston implements Car{
         this.time = time;
     }
 
-    public double getSpeed(){
-        return way / time;
+    public int getSpeed(){
+        return (int) (way / time);
     }
 
     public int increaseSpeed(){
@@ -21,11 +21,5 @@ public class Aston implements Car{
 
     public int decreaseSpeed(){
         return (int) (way / time - 45);
-    }
-
-    public static void showAstonDetails(Aston aston){
-        System.out.println("Asston's Speed is: " + aston.getSpeed());
-        System.out.println("Astonn's Speead after increase: " + aston.increaseSpeed());
-        System.out.println("Aston's Speed after decrese: " + aston.decreaseSpeed());
     }
 }
