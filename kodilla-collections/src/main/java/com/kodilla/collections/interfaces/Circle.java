@@ -1,6 +1,6 @@
 package com.kodilla.collections.interfaces;
 
-public class Circle {
+public class Circle implements Shape {
     private  double radius;
     static double PI = 3.1415927;
 

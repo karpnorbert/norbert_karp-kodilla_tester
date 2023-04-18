@@ -9,5 +9,9 @@ public class InterfacesDemo {
         Circle circle = new Circle(7.00);
         System.out.println("Area of Circle is equal: " + " " + circle.getArea());
         System.out.println("Perimetr of Circle is equal: " + " " + circle.getPerimeter());
+
+        Triangle triangle = new Triangle(20,30,40);
+        System.out.println(triangle.getArea());
+        System.out.println(triangle.getPerimeter());
     }
 }
