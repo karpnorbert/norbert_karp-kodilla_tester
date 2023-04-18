@@ -11,6 +11,7 @@ public class CarRace {
 
         Audi audi = new Audi(8.4, 1600);
         showAudiDetails(audi);
+
     }
     public static void showFordDetails(Ford ford){
         System.out.println("The speed of the Ford is: " + ford.getSpeed() + " " + "[KM/H]");
