@@ -14,11 +14,11 @@ public class Triangle implements Shape {
 
     @Override
     public double getArea() {
-        return width + height + hypotenuse;
+        return width * height / 2;
     }
 
     @Override
     public double getPerimeter() {
-        return width * height/2;
+        return width + height + hypotenuse;
     }
 }
