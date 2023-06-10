@@ -4,10 +4,16 @@ import java.time.Year;
 
 public class App {
     public static void main(String[] args) {
+        OperatingSystem genericOS = new OperatingSystem(2000);
+        genericOS.turnOn();
+        genericOS.turnOff();
 
-        OperatingSystem operatingSystem = new OperatingSystem(2019);
-        System.out.println("Year of car: " + operatingSystem.year);
-        operatingSystem.turnOn();
-        operatingSystem.turnOff();
+        Windows windowsOS = new Windows(1985);
+        windowsOS.turnOn();
+        windowsOS.turnOff();
+
+        Linux linuxOS = new Linux(1991);
+        linuxOS.turnOn();
+        linuxOS.turnOff();
     }
 }

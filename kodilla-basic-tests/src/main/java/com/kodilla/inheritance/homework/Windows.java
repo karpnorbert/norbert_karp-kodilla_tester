@@ -1,8 +1,17 @@
 package com.kodilla.inheritance.homework;
 
-public class Windows {
+class Windows extends OperatingSystem {
+    public Windows(int releaseYear) {
+        super(releaseYear);
+    }
 
-    public void restartSystem(){
-        System.out.println("");
+    @Override
+    public void turnOn() {
+        System.out.println("Windows OS turned on.");
+    }
+
+    @Override
+    public void turnOff() {
+        System.out.println("Windows OS turned off.");
     }
 }

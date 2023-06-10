@@ -11,6 +11,17 @@ public class Aston implements Car{
         this.time = time;
     }
 
+    @Override
+    public String toString() {
+        return "Aston{" +
+                "time=" + time +
+                ", way=" + way +
+                '}';
+    }
+
+    public static void add(Aston aston) {
+    }
+
     public int getSpeed(){
         return (int) (way / time);
     }

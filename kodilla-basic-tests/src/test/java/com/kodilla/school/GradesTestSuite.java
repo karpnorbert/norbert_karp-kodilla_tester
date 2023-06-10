@@ -1,4 +1,4 @@
-/*
+
 package com.kodilla.school;
 
 import org.junit.jupiter.api.Test;
@@ -21,7 +21,7 @@ public class GradesTestSuite {
         grades.add(2);
 
         int[] values = grades.getValues();
-        assertEquals(2, values.length);
+        assertEquals(2, grades.getSize());
         assertEquals(4, values[0]);
         assertEquals(2, values[1]);
     }
@@ -31,4 +31,4 @@ public class GradesTestSuite {
         Grades grades = new Grades();
         assertEquals(0, grades.getAverage(), 0.0001);
     }
-}*/
+}

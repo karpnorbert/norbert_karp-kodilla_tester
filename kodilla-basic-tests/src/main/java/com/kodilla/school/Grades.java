@@ -2,11 +2,9 @@ package com.kodilla.school;
 
 public class Grades {
 
-    private int[] values;
+    private int[] values = new int[10];
+    private int size = 0;
 
-    public Grades() {
-        this.values = new int[0];
-    }
 
 
     public double getAverage() {
@@ -21,11 +19,15 @@ public class Grades {
     }
 
     public void add(int grade) {
+        values[size] = grade;
+        size++;
     }
 
     public int[] getValues() {
-        return new int[0];
+        return values;
     }
 
-
+    public int getSize() {
+        return size;
+    }
 }
