@@ -33,4 +33,9 @@ public class Aston implements Car{
     public int decreaseSpeed(){
         return (int) (way / time - 45);
     }
+
+    @Override
+    public void describeCar() {
+
+    }
 }

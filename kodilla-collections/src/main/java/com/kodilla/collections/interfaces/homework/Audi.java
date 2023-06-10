@@ -26,4 +26,9 @@ public class Audi implements Car {
     public int decreaseSpeed() {
         return (int) (way / time - 3);
     }
+
+    @Override
+    public void describeCar() {
+
+    }
 }

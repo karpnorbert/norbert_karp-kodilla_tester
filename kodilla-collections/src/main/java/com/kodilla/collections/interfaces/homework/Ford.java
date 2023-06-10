@@ -28,5 +28,10 @@ public class Ford implements Car{
         return (int) (way / time - 4);
     }
 
+    @Override
+    public void describeCar() {
+
+    }
+
 
 }
