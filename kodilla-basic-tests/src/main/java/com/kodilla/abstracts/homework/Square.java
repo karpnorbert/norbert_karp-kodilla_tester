@@ -1,20 +1,21 @@
 package com.kodilla.abstracts.homework;
 
-public class Square extends Shape {
+import com.kodilla.abstracts.homework.Shape;
 
-    public double a;
+class Square extends Shape {
+    private double side;
 
-    public Square(double a) {
-        this.a = a;
+    public Square(double side) {
+        this.side = side;
     }
 
     @Override
-    public double area() {
-        return a * a;
+    public double calculateArea() {
+        return side * side;
     }
 
     @Override
-    public double circuit() {
-        return 4 * a;
+    public double calculatePerimeter() {
+        return 4 * side;
     }
 }

@@ -2,12 +2,16 @@ package com.kodilla.abstracts.homework;
 
 public class Application {
     public static void main(String[] args) {
-        Shape square = new Square(20);
-        System.out.println("Area of Square: " + square.area());
-        System.out.println("Circuit of Square: " + square.circuit());
+        Shape circle = new Circle(5);
+        System.out.println("Circle Area: " + circle.calculateArea());
+        System.out.println("Circle Perimeter: " + circle.calculatePerimeter());
 
-        Shape rectangle = new Rectangle(20, 30);
-        System.out.println("Area of rectangle: " + rectangle.area());
-        System.out.println("Circuit of rectangle: " + rectangle.circuit() );
+        Shape rectangle = new Rectangle(4, 6);
+        System.out.println("Rectangle Area: " + rectangle.calculateArea());
+        System.out.println("Rectangle Perimeter: " + rectangle.calculatePerimeter());
+
+        Shape triangle = new Triangle(3, 4, 5, 4, 3);
+        System.out.println("Triangle Area: " + triangle.calculateArea());
+        System.out.println("Triangle Perimeter: " + triangle.calculatePerimeter());
     }
 }

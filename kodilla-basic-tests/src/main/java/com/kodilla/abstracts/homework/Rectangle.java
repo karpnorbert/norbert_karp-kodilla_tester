@@ -1,22 +1,21 @@
 package com.kodilla.abstracts.homework;
 
-public class Rectangle extends Shape{
+class Rectangle extends Shape {
+    private double length;
+    private double width;
 
-    public double a;
-    public double b;
-
-    public Rectangle(double a, double b) {
-        this.a = a;
-        this.b = b;
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
     }
 
     @Override
-    public double area() {
-        return (2 * a) + (2 * b);
+    public double calculateArea() {
+        return length * width;
     }
 
     @Override
-    public double circuit() {
-        return a * b;
+    public double calculatePerimeter() {
+        return 2 * (length + width);
     }
 }

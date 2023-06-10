@@ -1,10 +1,7 @@
 package com.kodilla.abstracts.homework;
 
-public abstract class Shape {
+abstract class Shape {
+    public abstract double calculateArea();
 
-
-    public abstract double area();
-
-
-    public abstract double circuit();
+    public abstract double calculatePerimeter();
 }
