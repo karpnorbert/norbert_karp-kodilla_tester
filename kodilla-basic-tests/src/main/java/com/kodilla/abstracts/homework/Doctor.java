@@ -6,10 +6,8 @@ class Doctor extends Job {
     }
 
     @Override
-    public void displayJobDescription() {
-        System.out.println("Job: Doctor");
-        System.out.println("Responsibilities: " + getResponsibilities());
-        System.out.println("Salary: " + getSalary());
+    public void displayJobResponsibilities() {
+        System.out.println("As a doctor, you are responsible for: " + getResponsibilities());
     }
 }
 

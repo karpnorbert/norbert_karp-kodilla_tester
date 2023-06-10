@@ -6,9 +6,7 @@ class Teacher extends Job {
     }
 
     @Override
-    public void displayJobDescription() {
-        System.out.println("Job: Teacher");
-        System.out.println("Responsibilities: " + getResponsibilities());
-        System.out.println("Salary: " + getSalary());
+    public void displayJobResponsibilities() {
+        System.out.println("As a teacher, you are responsible for: " + getResponsibilities());
     }
 }

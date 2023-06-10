@@ -17,6 +17,5 @@ abstract class Job {
         return responsibilities;
     }
 
-    public abstract void displayJobDescription();
+    public abstract void displayJobResponsibilities();
 }
-

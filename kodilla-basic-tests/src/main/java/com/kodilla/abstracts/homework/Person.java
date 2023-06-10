@@ -10,5 +10,10 @@ class Person {
         this.age = age;
         this.job = job;
     }
+
+    public void displayResponsibilities() {
+        System.out.println("Person: " + firstName);
+        job.displayJobResponsibilities();
+    }
 }
 
