@@ -27,13 +27,14 @@ public class CalculatorTestSuite {
         assertEquals(0, sumResult1);
     }
     @Test
-    public void testPower(){
+    public void testPower() {
         Calculator calculator2 = new Calculator();
         double a2 = 2;
         int b3 = 4;
-        double sumResult2 = calculator2.pow(1, b3);
-        assertEquals(16, sumResult2, 0.001);
+        double powResult = calculator2.pow(a2, b3);
+        assertEquals(16, powResult, 0.001);
     }
+
 
     @Test
     public void shouldCalculateAverage() {
@@ -42,6 +43,7 @@ public class CalculatorTestSuite {
         grades.add(2);
         grades.add(5);
 
-        assertEquals(3.66, grades.getAverage(), 0.01);
+        assertEquals(3.67, grades.getAverage(), 0.01);
     }
+
 }
