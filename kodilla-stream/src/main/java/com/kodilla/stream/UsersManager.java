@@ -9,7 +9,7 @@ public class UsersManager {
         System.out.println(chemistGroupUsernames);
     }
 
-    public static List<String> filterChemistGroupUsernames() {
+    private static List<String> filterChemistGroupUsernames() {
         List<String> usernames = UsersRepository.getUsersList()   // [1]
                 .stream()
                 .filter(user -> user.getGroup().equals("Chemists"))
@@ -22,10 +22,4 @@ public class UsersManager {
     public static String getUserName(User user) {
         return user.getUsername();
     }
-    public static List<User> filterUsersByAge(List<User> users, int ageThreshold) {
-        return users.stream()
-                .filter(user -> user.getAge() > ageThreshold)
-                .collect(Collectors.toList());
-    }
-
 }

@@ -38,4 +38,12 @@ class UsersManagerTest {
         // then
         assertEquals(expectedUsers, filteredUsers);
     }
+
+    @Test
+    void main() {
+    }
+
+    @Test
+    void getUserName() {
+    }
 }
