@@ -1,49 +1,40 @@
 package com.kodilla.stream;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-class UsersManagerTest {
-
+public class UsersManagerTest {
     @Test
-    void testFilterChemistGroupUsernames() {
-        // given
-        List<String> expectedUsernames = List.of("Walter White", "Gale Boetticher");
+    public void testFilterChemistGroupUsernames() {
+        // Given
+        List<String> expectedUsernames = Arrays.asList("Walter White", "Gale Boetticher");
 
-        // when
-        List<String> chemistUsernames = UsersManager.filterChemistGroupUsernames();
+        // When
+        List<String> chemistGroupUsernames = UsersManager.filterChemistGroupUsernames();
 
-        // then
-        assertEquals(expectedUsernames, chemistUsernames);
+        // Then
+        Assertions.assertEquals(expectedUsernames, chemistGroupUsernames);
     }
 
     @Test
-    void testFilterUsersByAge() {
-        // given
+    public void testFilterUsersByAge() {
+        // Given
         List<User> users = UsersRepository.getUsersList();
         int ageThreshold = 40;
-        List<User> expectedUsers = List.of(
-                new User("Walter White", 50, 7, "Chemists"),
-                new User("Gus Firing", 49, 0, "Board"),
-                new User("Gale Boetticher", 44, 2, "Chemists"),
-                new User("Mike Ehrmantraut", 57, 0, "Security")
+        List<User> expectedUsers = Arrays.asList(
+                new User("Walter White", 50),
+                new User("Gus Firing", 49),
+                new User("Gale Boetticher", 44),
+                new User("Mike Ehrmantraut", 57)
         );
 
-        // when
+        // When
         List<User> filteredUsers = UsersManager.filterUsersByAge(users, ageThreshold);
 
-        // then
-        assertEquals(expectedUsers, filteredUsers);
-    }
-
-    @Test
-    void main() {
-    }
-
-    @Test
-    void getUserName() {
+        // Then
+        Assertions.assertEquals(expectedUsers, filteredUsers);
     }
 }
