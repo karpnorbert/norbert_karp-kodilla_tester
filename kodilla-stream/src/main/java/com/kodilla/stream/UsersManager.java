@@ -23,6 +23,9 @@ public class UsersManager {
         return user.getUsername();
     }
 
+    public UsersManager() {
+    }
+
     public static List<User> filterUsersByAge(List<User> users, int ageThreshold) {
         return users.stream()
                 .filter(user -> user.getAge() > ageThreshold)

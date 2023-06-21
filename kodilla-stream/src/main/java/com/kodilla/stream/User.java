@@ -8,26 +8,6 @@ public class User {
     private int numberOfPosts;
     private String group;
 
-    public User(String username, int age) {
-        this.username = username;
-        this.age = age;
-        this.numberOfPosts = 0; // Domyślna wartość
-        this.group = ""; // Domyślna wartość
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof User)) return false;
-        User user = (User) o;
-        return age == user.age && numberOfPosts == user.numberOfPosts && Objects.equals(username, user.username) && Objects.equals(group, user.group);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(username, age, numberOfPosts, group);
-    }
-
     public String getUsername() {
         return username;
     }
@@ -49,5 +29,17 @@ public class User {
         this.age = age;
         this.numberOfPosts = numberOfPosts;
         this.group = group;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User user)) return false;
+        return age == user.age && numberOfPosts == user.numberOfPosts && Objects.equals(username, user.username) && Objects.equals(group, user.group);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username, age, numberOfPosts, group);
     }
 }

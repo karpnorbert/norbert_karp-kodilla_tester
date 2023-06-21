@@ -25,10 +25,10 @@ public class UsersManagerTest {
         List<User> users = UsersRepository.getUsersList();
         int ageThreshold = 40;
         List<User> expectedUsers = Arrays.asList(
-                new User("Walter White", 50),
-                new User("Gus Firing", 49),
-                new User("Gale Boetticher", 44),
-                new User("Mike Ehrmantraut", 57)
+                new User("Walter White", 50, 7, "Chemists"),
+                new User("Gus Firing", 49, 0, "Board"),
+                new User("Gale Boetticher", 44, 2, "Chemists"),
+                new User("Mike Ehrmantraut", 57, 0, "Security")
         );
 
         // When

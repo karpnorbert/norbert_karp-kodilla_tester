@@ -1,4 +1,4 @@
-package com.kodilla.stream.homework;
+package com.kodilla.stream;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ public class ForumStats {
     public static double calculateAveragePostsForUsersAboveAge(List<User> users, int age) {
         return users.stream()
                 .filter(user -> user.getAge() >= age)
-                .mapToInt(User::getNumberOfPosts)
+                .mapToInt(user->user.getNumberOfPosts())
                 .average()
                 .orElse(0.0);
     }
@@ -20,7 +20,7 @@ public class ForumStats {
     }
 
     public static void main(String[] args) {
-        List<User> users = UsersRepository.getUsers();
+        List<User> users = UsersRepository.getUsersList();
 
         double averagePostsAbove40 = calculateAveragePostsForUsersAboveAge(users, 40);
         double averagePostsBelow40 = calculateAveragePostsForUsersBelowAge(users, 40);
