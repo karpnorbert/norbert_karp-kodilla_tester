@@ -32,3 +32,5 @@ public class ForumStats {
         System.out.println("Average posts for users below 40: " + averagePostsBelow40);
     }
 }
+
+
