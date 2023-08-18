@@ -1,4 +1,7 @@
-package com.kodilla.stream;
+package com.kodilla.stream.homework;
+
+import com.kodilla.stream.User;
+import com.kodilla.stream.UsersRepository;
 
 import java.util.List;
 
