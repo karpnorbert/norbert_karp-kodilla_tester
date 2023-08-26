@@ -2,11 +2,16 @@ package com.kodilla.exception;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class AirportRepositoryTestSuite {
-
+public class AirportRepositoryTestSuite {
     @Test
-    void isAirportInUse() {
+    public void testIsAirportInUse() throws AirportNotFoundException {
+        // given
+        AirportRepository airportRepository = new AirportRepository();
+        // when
+        boolean isWarsawInUse = airportRepository.isAirportInUse("Warsaw");
+        // then
+        assertTrue(isWarsawInUse);
     }
 }
