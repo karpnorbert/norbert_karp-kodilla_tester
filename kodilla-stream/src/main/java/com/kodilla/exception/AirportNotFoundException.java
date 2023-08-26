@@ -1,4 +1,5 @@
 package com.kodilla.exception;
 
-public class AirportNotFoundException {
+public class AirportNotFoundException extends Exception {
+
 }
