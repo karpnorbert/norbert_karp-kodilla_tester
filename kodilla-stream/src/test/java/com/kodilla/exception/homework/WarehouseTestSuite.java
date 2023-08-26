@@ -1,16 +1,19 @@
 package com.kodilla.exception.homework;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
-class WarehouseTestSuite {
-
-    @Test
-    void addOrder() {
-    }
+public class WarehouseTestSuite {
 
     @Test
-    void getOrder() {
+    public void testGetOrderShouldThrowExceptionWhenOrderDoesNotExist() {
+        //Given
+        Warehouse warehouse = new Warehouse();
+        warehouse.addOrder(new Order("123"));
+
+        //When & Then
+        assertThrows(OrderDoesntExistException.class, () -> warehouse.getOrder("999"));
     }
 }
