@@ -3,7 +3,7 @@ package com.kodilla.mockito.homework;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-public class WeatherAlertServiceTest {
+public class WeatherAlertServiceTestSuite {
 
     WeatherAlertService weatherAlertService = new WeatherAlertService();
     Client client = Mockito.mock(Client.class);
