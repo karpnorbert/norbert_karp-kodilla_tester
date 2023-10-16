@@ -22,7 +22,7 @@ public class ApplicationTest {
         String expectedOutput = "Uczeń: Jan Kowalski, nauczyciel: Tomasz Nowak" + System.lineSeparator() +
                 "Uczeń: Anna Wiśniewska, nauczyciel: <undefined>" + System.lineSeparator() +
                 "Uczeń: Piotr Nowakowski, nauczyciel: Michał Kowalczyk" + System.lineSeparator() +
-                "Uczeń: Magdalena Wójcik, nauczyciel: <undefined>";
+                "Uczeń: Magdalena Wójcik, nauczyciel: <undefined>" + System.lineSeparator();
 
         // when
         StringBuilder output = new StringBuilder();
