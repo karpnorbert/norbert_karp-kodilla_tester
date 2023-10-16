@@ -23,7 +23,7 @@ public class PersonTestSuite {
     @Test
     public void testSeverelyUnderweight() {
         person = new Person(1.75, 40); // Poważna niedowaga
-        assertEquals("Severely underweight", person.getBMI());
+        assertEquals("Very severely underweight", person.getBMI());
     }
 
     @Test
@@ -77,6 +77,6 @@ public class PersonTestSuite {
     @Test
     public void testObeseClassVI() {
         person = new Person(1.75, 170); // Otyłość Klasy VI
-        assertEquals("Obese Class VI (Hyper Obese)", person.getBMI());
+        assertEquals("Obese Class V (Super Obese)", person.getBMI());
     }
 }
