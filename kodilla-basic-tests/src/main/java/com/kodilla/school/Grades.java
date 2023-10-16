@@ -8,14 +8,14 @@ public class Grades {
 
 
     public double getAverage() {
-        if (this.values.length == 0) {
+        if (size == 0) {
             return 0;
         }
         double sum = 0;
-        for(int i = 0; i < this.values.length; i++) {
+        for(int i = 0; i < size; i++) {
             sum += this.values[i];
         }
-        return sum/this.values.length;
+        return sum/size;
     }
 
     public void add(int grade) {

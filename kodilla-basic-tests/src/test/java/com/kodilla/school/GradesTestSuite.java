@@ -10,8 +10,7 @@ public class GradesTestSuite {
     @Test
     public void shouldHaveZeroLength() {
         Grades grades = new Grades();
-        int[] values = grades.getValues();
-        assertEquals(0, values.length);
+        assertEquals(0, grades.getSize());
     }
 
     @Test
