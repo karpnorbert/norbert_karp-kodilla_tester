@@ -4,9 +4,9 @@ import org.junit.jupiter.params.provider.Arguments;
 
 import java.util.stream.Stream;
 
-public class StringSourcesSuite {
+public class StringSources {
 
-    private static Stream<Arguments> provideStringsForTestingLength() {
+    static Stream<Arguments> provideStringsForTestingLength() {
         return Stream.of(
                 Arguments.of("test", 4),
                 Arguments.of("OtHEr ", 5),
@@ -16,4 +16,3 @@ public class StringSourcesSuite {
         );
     }
 }
-

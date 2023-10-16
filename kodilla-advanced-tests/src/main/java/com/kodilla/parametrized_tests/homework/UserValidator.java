@@ -6,11 +6,11 @@ import java.util.regex.Pattern;
 public class UserValidator {
 
     public boolean validateUsername(String username) {
-        return username != null && username.matches("^[a-zA-Z0-9._-]{3,}$");
+        return username.matches("^[a-zA-Z0-9._-]{3,}$");
     }
 
     public boolean validateEmail(String email) {
-        if (email != null) {
+        if (null != email) {
             String regex = "^([_a-zA-Z0-9-]+(\\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*(\\.[a-zA-Z]{1,6}))?$";
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(email);
