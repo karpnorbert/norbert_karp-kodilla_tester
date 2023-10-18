@@ -1,0 +1,16 @@
+Dodanie nowego postu do tabeli POSTS:
+
+INSERT INTO POSTS (USER_ID, BODY)
+VALUES (3, "This is a new post.");
+
+Zmiana w dodanym rekordzie wartości pola BODY na "To delete":
+
+UPDATE POSTS
+SET BODY = "To delete"
+WHERE ID = 5;
+
+
+Usunięcie dodanego przed chwilą rekordu:
+
+DELETE FROM POSTS
+WHERE ID = 5;
