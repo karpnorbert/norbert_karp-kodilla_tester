@@ -8,4 +8,8 @@ include 'kodilla-collections-advanced'
 include 'kodilla-stream'
 include 'kodilla-advanced-tests'
 include 'kodilla-spring-basic'
+include 'kodilla-spring-basic:kodilla-rest-api'
+findProject(':kodilla-spring-basic:kodilla-rest-api')?.name = 'kodilla-rest-api'
+include 'kodilla-rest-api'
+include 'kodilla-rest-api'
 
