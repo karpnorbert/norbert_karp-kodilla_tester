@@ -1,0 +1,6 @@
+Na podstawie przedstawionych zrzutów ekranu z narzędzi deweloperskich przeglądarki można zauważyć, że:
+
+Wysłano żądanie do serwera, aby pobrać listę zadań (getTasks).
+Dokonano modyfikacji zadania, co wskazuje żądanie typu PUT o nazwie updateTask.
+Usunięto zadanie, co potwierdza żądanie typu DELETE o nazwie deleteTask/taskId=2.
+Aplikacja, z której pochodzą te żądania, komunikuje się z lokalnym serwerem działającym na porcie 8080. Wygląda na to, że jest to aplikacja do zarządzania zadaniami, umożliwiająca dodawanie, modyfikowanie oraz usuwanie zadań.
