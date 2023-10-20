@@ -15,7 +15,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 @WebMvcTest(BookController.class)
-class BookControllerMvcTest {
+class BookControllerMvcTestSuite {
 
     @Autowired
     private MockMvc mockMvc;
@@ -25,7 +25,7 @@ class BookControllerMvcTest {
 
     @BeforeEach
     void setUp() {
-        // Przygotuj mocka przed każdym testem, jeśli to konieczne
+
     }
 
     @Test
