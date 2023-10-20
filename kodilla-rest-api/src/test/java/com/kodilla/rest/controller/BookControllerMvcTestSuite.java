@@ -25,7 +25,7 @@ class BookControllerMvcTestSuite {
 
     @BeforeEach
     void setUp() {
-        // Przygotuj mocka przed każdym testem, jeśli to konieczne
+
     }
 
     @Test
