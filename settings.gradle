@@ -16,4 +16,6 @@ include 'kodilla-selenium'
 include 'kodilla-selenium'
 include 'kodilla-selenium'
 include 'kodilla-selenium'
+include 'kodilla-selenium:kodilla-login-selenium.'
+findProject(':kodilla-selenium:kodilla-login-selenium.')?.name = 'kodilla-login-selenium.'
 

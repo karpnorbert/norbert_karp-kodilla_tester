@@ -1,6 +1,6 @@
 //package com.kodilla.selenium.pom;
 
-//public class KodillaCssTechnologyPom {
+//public class KodillaBootcampLoginPom {
 
   //  HeaderWIthMenuPom headerWIthMenuPom;
 
