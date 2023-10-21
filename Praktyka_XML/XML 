@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<car>
+    <make>Toyota</make>
+    <model>Camry</model>
+    <year>2023</year>
+    <color>Silver</color>
+    <engine>
+        <fuelType>Petrol</fuelType>
+        <capacity>2.5L</capacity>
+        <horsepower>203</horsepower>
+    </engine>
+    <transmission>Automatic</transmission>
+    <price>25000</price>
+</car>
