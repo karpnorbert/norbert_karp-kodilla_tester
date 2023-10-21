@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 public class LoginTestingApp {
     public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver", "/Users/norbertkarp/Documents/Development/Kodilla/geckodriver");  // Uzupełnij ścieżką do twojego geckodrivera
+        System.setProperty("webdriver.gecko.driver", "/Users/norbertkarp/Documents/Development/Kodilla/geckodriver");
 
         WebDriver driver = new FirefoxDriver();
         driver.get("https://kodilla.com/pl/test/login");
